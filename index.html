@@ -37,11 +37,19 @@
                     </li>
                 </ul>
             </div>
-
+            <!-- right div  -->
             <div>
-                <ul class="flex gap-x-16 text-gray-700">
-                    <li><a href="">Search</a></li>
-                    <li><a href="">Account</a></li>
+                <ul class="flex gap-x-10 text-gray-700 items-center justify-center">
+
+                    <li> <input type="search" placeholder="Search..."
+                            class="w-full border rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500" />
+                    </li>
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                        </a></li>
                     <li class=""><a href="" class="flex gap-2">
                             <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -49,7 +57,7 @@
                                         d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                                 </svg>
                             </span>
-                            My card</a></li>
+                        </a></li>
                 </ul>
             </div>
         </div>
@@ -266,21 +274,33 @@
     </section>
     <!-- section -05  -->
     <section class="container mx-auto mt-20">
-        <div class="flex flex-3 justify-around">
-            <div class="">
-                <a href="">
-                    <p>PRINTED T-SHIRT</p>
-                </a>
+        <div class="flex flex-3 justify-around gap-3">
+            <div
+                class=" bg-gray-400 flex items-center justify-center w-full h-full py-10 bg-[url('/images/image-01.jpg')]  bg-cover bg-center bg-no-repeat relative">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="relative z-10">
+                    <a href="">
+                        <p class="text-white font-semibold">PRINTED T-SHIRT</p>
+                    </a>
+                </div>
             </div>
-            <div class="">
-                <a href="">
-                    <p>T-SHIRT</p>
-                </a>
+            <div
+                class=" flex items-center justify-center w-full h-full py-10 bg-[url('/images/image-02.webp')]  bg-cover bg-center bg-no-repeat relative">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="relative z-10">
+                    <a href="https://www.figma.com/community/file/1511295970021277378">
+                        <p class="font-semibold text-white">T-SHIRT</p>
+                    </a>
+                </div>
             </div>
-            <div class="">
-                <a href="">
-                    <p>DROP SHOULDER</p>
-                </a>
+            <div
+                class=" flex items-center justify-center w-full h-full py-10 bg-[url('/images/final-03.jpg')]  bg-cover bg-center bg-no-repeat relative">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="relative z-10">
+                    <a href="https://heroicons.com/outline">
+                        <p class="font-semibold text-white">DROP SHOULDER</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -303,7 +323,8 @@
                             know it
                             will be one to remember.Lorem ipsum dolor sit amet...</p>
                         <div class="flex justify-between whitespace-nowrap gap-3">
-                            <span class="text-sm font-semibold gap-1 text-gray-700 flex flex-row items-center justify-center">
+                            <span
+                                class="text-sm font-semibold gap-1 text-gray-700 flex flex-row items-center justify-center">
                                 <i class="fa-regular fa-address-card"></i>
                                 BY VINOVA THEME
                             </span>
@@ -357,7 +378,8 @@
                                 <i class="fa-regular fa-address-card"></i>
                                 BY VINOVA THEME
                             </span>
-                            <span class="flex flex-row items-center justify-center text-sm gap-1 font-semibold text-gray-700">
+                            <span
+                                class="flex flex-row items-center justify-center text-sm gap-1 font-semibold text-gray-700">
                                 <i class="fa-regular fa-calendar"></i>
                                 03 MAR 2021
                             </span>
@@ -366,8 +388,78 @@
                 </div>
             </div>
         </div>
-    </section>\
+    </section>
     <!-- section - 07  -->
+    <section class="mt-80 bg-black">
+        <div
+            class="flex justify-between items-center container mx-auto bg-[url('/images/footer.jpeg')]  bg-cover bg-center bg-no-repeat relative">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <!-- left div  -->
+            <div class="w-1/2 relative">
+                <img src="images/discount.jpg" alt="">
+            </div>
+            <!-- right div  -->
+            <div class="w-1/2 relative">
+                <form class="flex flex-col gap-4 pr-2">
+                    <input type="email" placeholder="Enter your email" required class="border p-3 rounded-sm w-full">
+                    <button type="submit"
+                        class="bg-white text-black  px-4 py-3 rounded-sm w-full md:w-fit font-semibold">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- section -08  -->
+    <section class="bg-black">
+        <div class="grid grid-cols-2 md:grid-cols-4 justify-around gap-5 mx-auto container p-10">
+            <!-- first div  -->
+            <div class="text-white">
+                <h1 class="font-semibold">QUICK LINKS</h1>
+                <ul class="mt-5 ">
+                    <li>Home</li>
+                    <li class="my-2">About Us</li>
+                    <li>Offers</li>
+                    <li class="my-2">Servies</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <!-- second div  -->
+            <div class="text-white">
+                <h1 class="font-semibold">ABOUT</h1>
+                <ul class="mt-5">
+                    <li>How It Work</li>
+                    <li class="my-3">Our Packages</li>
+                    <li class="my-3">Promotions</li>
+                    <li>Refer A Friencd</li>
+                </ul>
+            </div>
+            <!-- third div  -->
+            <div class="text-white">
+                <h1 class="font-semibold">HELP CENTER</h1>
+                <ul class="mt-5">
+                    <li>Payment</li>
+                    <li class="my-2">Shiping</li>
+                    <li>Product Return</li>
+                    <li class="my-2">FAQs</li>
+                    <li>Checkout</li>
+                    <li class="mt-1">Other Issues</li>
+                </ul>
+
+            </div>
+            <!-- fourth div  -->
+            <div class="text-white flex flex-col">
+                <img src="images/logo.png" alt="">
+                <ul class="flex items-center justify-around mt-10">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
 </body>
